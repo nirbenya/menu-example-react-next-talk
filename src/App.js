@@ -49,6 +49,17 @@ const HomePageMenu = () => {
 };
 
 
+function HomePage() {
+	return (
+		<div className="App">
+			<h1>Home page</h1>
+			<HomePageMenu />
+			{/*<MenuWithSections />*/}
+		</div>
+	);
+}
+
+
 const MenuWithSections = () => {
 	const {
 		activeIndex,
@@ -94,14 +105,6 @@ const MenuWithSections = () => {
 	);
 };
 
-function HomePage() {
-	return (
-		<div className="App">
-			<h1>Home page</h1>
-			<HomePageMenu />
-			{/*<MenuWithSections />*/}
-		</div>
-	);
-}
+
 
 export default HomePage;
