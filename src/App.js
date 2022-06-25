@@ -49,7 +49,6 @@ function HomePage() {
 		<div className="App">
 			<h1>Home page</h1>
 			<HomePageMenu />
-			{/*<MenuWithSections />*/}
 		</div>
 	);
 }
