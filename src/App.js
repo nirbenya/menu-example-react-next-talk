@@ -20,29 +20,26 @@ const HomePageMenu = () => {
 	return (
 		<div className={'menu'} {...getMenuProps?.()}>
 
+			<div>
+				<MenuButton {...getButtonProps?.()} />
+			</div>
 			{isOpen && (
 				<MenuDropdown>
 					<MenuItem
 						{...getMenuItemProps(0)}
-						onClick={() => setIsOpen(true)}
-						className={classNames(activeIndex === 0 && 'active', 'blue')}
+						className={classNames(activeIndex === 0 && 'active')}
 					>
 						first item
 					</MenuItem>
 					<MenuItem
 						{...getMenuItemProps(1)}
-						className={classNames(activeIndex === 1 && 'active', 'blue')}
+						className={classNames(activeIndex === 1 && 'active')}
 					>
 						second item
 					</MenuItem>
 				</MenuDropdown>
 			)}
 
-			<div>
-				<Tooltip title={"click here"}>
-					<MenuButton {...getButtonProps?.()} />
-				</Tooltip>
-			</div>
 		</div>
 	);
 };
