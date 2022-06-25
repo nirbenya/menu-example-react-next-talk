@@ -13,15 +13,15 @@ const HomePageMenu = () => {
 		setIsOpen,
 		isOpen,
 		getMenuProps,
-		getButtonProps,
 		getMenuItemProps,
+		getButtonProps
 	} = useMenu();
 
 	return (
 		<div className={'menu'} {...getMenuProps?.()}>
 
 			<div>
-				<MenuButton {...getButtonProps?.()} />
+				<MenuButton />
 			</div>
 			{isOpen && (
 				<MenuDropdown>
