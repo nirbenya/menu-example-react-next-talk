@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import HomePage from './HomePage';
 import { ThemeProvider } from 'styled-components';
 import { colors } from './style';
 
@@ -16,7 +16,7 @@ root.render(
 				actionLight: colors.actionLight,
 			}}
 		>
-			<App />
+			<HomePage />
 		</ThemeProvider>
 	</React.StrictMode>,
 );

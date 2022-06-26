@@ -40,6 +40,11 @@ const useMenu = () => {
 				role: 'menu',
 			};
 		},
+		getDropdownProps: () => {
+			return {
+				role: 'menu',
+			};
+		},
 		getButtonProps: (props = {}) => {
 			return {
 				'aria-haspopup': true,
