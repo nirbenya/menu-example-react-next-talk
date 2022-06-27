@@ -47,5 +47,44 @@ function HomePage() {
 		</div>
 	);
 }
+//
+// const Menu = ({ children }) => {
+// 	const menuProps = useMenu();
+//
+// 	return children(menuProps);
+// };
+//
+// function HomePage() {
+// 	return (
+// 		<div className="App">
+// 			<h1>Home page</h1>
+// 			<Menu>
+// 				{({ activeIndex, getButtonProps, isOpen }) => (
+// 					<MenuContainer>
+// 						<MenuButton {...getButtonProps()} />
+// 						{isOpen && (
+// 							<MenuDropdown>
+// 								<MenuItem
+// 									className={classNames(
+// 										activeIndex === 0 && 'active',
+// 									)}
+// 								>
+// 									First item
+// 								</MenuItem>
+// 								<MenuItem
+// 									className={classNames(
+// 										activeIndex === 1 && 'active',
+// 									)}
+// 								>
+// 									Second item
+// 								</MenuItem>
+// 							</MenuDropdown>
+// 						)}
+// 					</MenuContainer>
+// 				)}
+// 			</Menu>
+// 		</div>
+// 	);
+// }
 
 export default HomePage;
