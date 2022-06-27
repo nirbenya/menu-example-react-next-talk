@@ -26,10 +26,13 @@ const HomePageMenu = () => {
 			<MenuButton />
 			<MenuDropdown>
 				<MenuItem className={classNames(activeIndex === 0 && 'active')}>
-					first item
+					First item
 				</MenuItem>
 				<MenuItem className={classNames(activeIndex === 1 && 'active')}>
-					second item
+					Second item
+				</MenuItem>
+				<MenuItem className={classNames(activeIndex === 2 && 'active')}>
+					Third item
 				</MenuItem>
 			</MenuDropdown>
 		</MenuContainer>
