@@ -10,7 +10,6 @@ import Icon from './components/icon';
 // sections
 // render props
 
-
 // menu stuff
 import useMenu, {
 	MenuItem,
