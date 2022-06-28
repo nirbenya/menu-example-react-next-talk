@@ -16,6 +16,7 @@ import useMenu, {
 	MenuButton,
 	MenuDropdown,
 	MenuContainer,
+	Menu,
 } from './components/menu/menu';
 
 const HomePageMenu = () => {
@@ -47,13 +48,7 @@ function HomePage() {
 		</div>
 	);
 }
-//
-// const Menu = ({ children }) => {
-// 	const menuProps = useMenu();
-//
-// 	return children(menuProps);
-// };
-//
+
 // function HomePage() {
 // 	return (
 // 		<div className="App">

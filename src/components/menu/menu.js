@@ -55,4 +55,14 @@ export const MenuContainer = styled.div.attrs({ className: 'menu' })`
 
 
 
+
+// render prop
+export const Menu = ({ children }) => {
+    const menuProps = useMenu();
+
+    return children(menuProps);
+};
+
+
+
 export default useMenu;
